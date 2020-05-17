@@ -1,16 +1,10 @@
 import React from 'react';
+import './Header.css';
 
 function Footer(){
 
-    return(
+    return <footer> &copy; Site Desenvolvido para Aprender React</footer>
 
-        <>
-
-            <h1>FOOTER</h1>
-
-        </>
-
-    );
 }
 
 export default Footer;
