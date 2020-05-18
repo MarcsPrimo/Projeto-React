@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './Header.css'
-
+import Logo from '../imagens/logo1.png'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Continentes from './Continentes';
 
@@ -18,6 +18,7 @@ function Header(){
         <>
             <BrowserRouter>
                 <header>
+                <img src={Logo} alt="Logo" className="logo"/>
                     <nav>
                         <ul>
                             <li>
