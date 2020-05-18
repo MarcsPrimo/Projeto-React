@@ -1,17 +1,11 @@
 import React, {useState} from 'react';
 import './Header.css'
+import './Main.css'
 import Logo from '../imagens/logo1.png'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Continentes from './Continentes';
 
 function Header(){
-
-    const [americaSul, setAmericaSul] = useState(false);
-    const [americaNorte, setAmericaNorte] = useState(false);
-    const [europa, setEuropa] = useState(false);
-    const [asia, setAsia] = useState(false);
-    const [africa, setAfrica] = useState(false);
-    const [oceania, setOceania] = useState(false);
 
     return(
 
