@@ -1,24 +1,21 @@
 import React, {useState} from 'react';
 import './Header.css'
+import './Main.css'
 import Logo from '../imagens/logo1.png'
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import Continentes from './Continentes';
+import Main from './Main';
 
 function Header(){
-
-    const [americaSul, setAmericaSul] = useState(false);
-    const [americaNorte, setAmericaNorte] = useState(false);
-    const [europa, setEuropa] = useState(false);
-    const [asia, setAsia] = useState(false);
-    const [africa, setAfrica] = useState(false);
-    const [oceania, setOceania] = useState(false);
 
     return(
 
         <>
             <BrowserRouter>
                 <header>
+                <Link to="/">
                 <img src={Logo} alt="Logo" className="logo"/>
+                </Link> 
                     <nav>
                         <ul>
                             <li>
@@ -51,21 +48,16 @@ function Header(){
                                     Europa
                                 </Link>
                             </li>
-                            
                         </ul>
                     </nav>
                 </header>
-                <main>
-                    <div>
-                    <Route exact path="/Africa" component={() => <Continentes continente = 'Africa' />} />
-                    <Route exact path="/AmericaSul" component={() => <Continentes continente = 'America do Sul' />} />
-                    <Route exact path="/AmericaNorte" component={() => <Continentes continente = 'America do Norte' />} />
-                    <Route exact path="/Asia" component={() => <Continentes continente = 'Asia' />} />
-                    <Route exact path="/Oceania" component={() => <Continentes continente = 'Oceania' />} />
-                    <Route exact path="/Europa" component={() => <Continentes continente = 'Europa' />} />
-
-                    </div>
-                </main>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/Africa/" component={() => <Continentes continente = 'Africa' />} />
+                <Route exact path="/AmericaSul/" component={() => <Continentes continente = 'America do Sul' />} />
+                <Route exact path="/AmericaNorte/" component={() => <Continentes continente = 'America do Norte' />} />
+                <Route exact path="/Asia/" component={() => <Continentes continente = 'Asia' />} />
+                <Route exact path="/Oceania/" component={() => <Continentes continente = 'Oceania' />} />
+                <Route exact path="/Europa/" component={() => <Continentes continente = 'Europa' />} />
             </BrowserRouter>
         </>
 
