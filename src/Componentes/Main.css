@@ -8,20 +8,20 @@ h3{
     margin-top: 1%;
 }
 h4{
-    color: rgb(2, 84, 116);
     text-align: center;
 }
+
 .imagens{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 1%;
+    width: 560px; 
+    height: 315px;
 }
+
 .pagInicial{
     text-align: center;
     padding: 15%;
-    background-image: url("../imagens/imgbg.jpg");
+    background-image: url("../imagens/logobranco.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
     font-family: 'Handlee', cursive;
+    background-color: rgb(196, 190, 190);
 }
